@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@tailwindcss/vite':
-        specifier: ^4.1.5
-        version: 4.1.5(vite@6.3.5(@types/node@22.15.14)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.1))
+      '@iconify/react':
+        specifier: ^6.0.0
+        version: 6.0.0(react@18.3.1)
       '@tauri-apps/api':
         specifier: ^2
         version: 2.5.0
@@ -66,6 +66,9 @@ importers:
       '@eslint-react/eslint-plugin':
         specifier: ^1.49.0
         version: 1.49.0(eslint@9.26.0(jiti@2.4.2))(ts-api-utils@2.1.0(typescript@5.6.3))(typescript@5.6.3)
+      '@tailwindcss/vite':
+        specifier: ^4.1.5
+        version: 4.1.5(vite@6.3.5(@types/node@22.15.14)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.1))
       '@tauri-apps/cli':
         specifier: ^2
         version: 2.5.0
@@ -533,6 +536,14 @@ packages:
   '@humanwhocodes/retry@0.4.2':
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
+
+  '@iconify/react@6.0.0':
+    resolution: {integrity: sha512-eqNscABVZS8eCpZLU/L5F5UokMS9mnCf56iS1nM9YYHdH8ZxqZL9zyjSwW60IOQFsXZkilbBiv+1paMXBhSQnw==}
+    peerDependencies:
+      react: '>=16'
+
+  '@iconify/types@2.0.0':
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
   '@jridgewell/gen-mapping@0.3.8':
     resolution: {integrity: sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==}
@@ -3298,6 +3309,13 @@ snapshots:
   '@humanwhocodes/retry@0.3.1': {}
 
   '@humanwhocodes/retry@0.4.2': {}
+
+  '@iconify/react@6.0.0(react@18.3.1)':
+    dependencies:
+      '@iconify/types': 2.0.0
+      react: 18.3.1
+
+  '@iconify/types@2.0.0': {}
 
   '@jridgewell/gen-mapping@0.3.8':
     dependencies:

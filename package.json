@@ -11,7 +11,7 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.5",
+    "@iconify/react": "^6.0.0",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-http": "^2.4.3",
     "@tauri-apps/plugin-opener": "^2",
@@ -32,6 +32,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^4.12.1",
     "@eslint-react/eslint-plugin": "^1.49.0",
+    "@tailwindcss/vite": "^4.1.5",
     "@tauri-apps/cli": "^2",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.1",

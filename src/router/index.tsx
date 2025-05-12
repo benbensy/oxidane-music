@@ -1,4 +1,5 @@
 import type { RouteObject } from 'react-router-dom'
+import { createBrowserRouter } from 'react-router-dom'
 import DefaultLayout from '../layouts/DefaultLayout'
 import HomePage from '../pages/HomePage'
 
@@ -13,3 +14,5 @@ export const routes: RouteObject[] = [
     ],
   },
 ]
+
+export const router = createBrowserRouter(routes)
